@@ -25,9 +25,10 @@ export default {
       { property: 'og:title', content: 'About Page' },
       { property: 'og:description', content: 'This is Eric About page' },
       { property: 'og:site_name', content: 'About Page' },
-      { property: 'og:locale', content: 'zh_TW' }
+      { property: 'og:locale', content: 'zh_TW' },
+      { property: 'og:image', content: '/about.png' }
     ],
-    link: [{ rel: 'shortcut icon', href: '~/assets/about.png' }]
+    link: [{ rel: 'shortcut icon', href: '/about.png' }]
   }
 }
 </script>

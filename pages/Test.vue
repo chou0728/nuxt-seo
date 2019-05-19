@@ -25,9 +25,10 @@ export default {
       { property: 'og:title', content: 'Test Page' },
       { property: 'og:description', content: 'This is Eric test page' },
       { property: 'og:site_name', content: 'Test Page' },
-      { property: 'og:locale', content: 'zh_TW' }
+      { property: 'og:locale', content: 'zh_TW' },
+      { property: 'og:image', content: '/test.png' }
     ],
-    link: [{ rel: 'shortcut icon', href: '~/assets/test.png' }]
+    link: [{ rel: 'shortcut icon', href: '/test.png' }]
   }
 }
 </script>

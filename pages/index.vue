@@ -32,9 +32,10 @@ export default {
       { property: 'og:title', content: 'Index Page' },
       { property: 'og:description', content: 'This is Eric Index page' },
       { property: 'og:site_name', content: 'Index Page' },
-      { property: 'og:locale', content: 'zh_TW' }
+      { property: 'og:locale', content: 'zh_TW' },
+      { property: 'og:image', content: '/index.png' }
     ],
-    link: [{ rel: 'shortcut icon', href: '~/assets/index.png' }]
+    link: [{ rel: 'shortcut icon', href: '/index.png' }]
   }
 }
 </script>
