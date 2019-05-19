@@ -1,5 +1,15 @@
 const pkg = require('./package')
 
+// only add `router.base = '/<repository_name>/'` if `DEPLOY_ENV` is `GH_PAGES`
+const routerBase =
+  process.env.DEPLOY_ENV === 'GH_PAGES'
+    ? {
+        router: {
+          base: '/<repository_name>/'
+        }
+      }
+    : {}
+
 module.exports = {
   mode: 'universal',
 
@@ -73,5 +83,10 @@ module.exports = {
 
   generate: {
     fallback: true
-  }
+  },
+
+  /*
+   ** The router property lets you customize Nuxt.js router
+   */
+  ...routerBase
 }
