@@ -81,9 +81,9 @@ module.exports = {
    ** Configure the generation of your universal web application to a static web application.
    */
 
-  generate: {
-    fallback: true
-  },
+  // generate: {
+  //   fallback: true
+  // },
 
   /*
    ** The router property lets you customize Nuxt.js router
